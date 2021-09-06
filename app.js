@@ -1,7 +1,10 @@
-const countdown = document.querySelector('.countdown');
+const hireclick = document.querySelector(".hire");
+hireclick.classList.toggle;
+
+const countdown = document.querySelector(".countdown");
 
 // Set Launch Date (ms)
-const launchDate = new Date('Jan 1, 2022 13:00:00').getTime();
+const launchDate = new Date("Jan 1, 2022 13:00:00").getTime();
 
 // Update every second
 const intvl = setInterval(() => {
@@ -32,31 +35,20 @@ const intvl = setInterval(() => {
     // Stop countdown
     clearInterval(intvl);
     // Style and output text
-    countdown.style.color = '#17a2b8';
-    countdown.innerHTML = 'Launched!';
+    countdown.style.color = "#17a2b8";
+    countdown.innerHTML = "Launched!";
   }
 }, 1000);
 
-
-
 // PART 2 HAMBURGER
 
-const toggle1=document.querySelector('.logoName .toggle ');
-const navItems1=document.querySelector('.navItems ');
-const lists=document.querySelector('.navItems li ');
-const  toggleA=document.querySelectorAll(' .plus_e');
+const toggle1 = document.querySelector(".logoName .toggle ");
+const navItems1 = document.querySelector(".navItems ");
+const lists = document.querySelector(".navItems li ");
+const toggleA = document.querySelectorAll(" .plus_e");
 
-toggle1.addEventListener('click',
-function () {
-    navItems1.classList.toggle('open');
-    
-    
-}
- 
-
-);
+toggle1.addEventListener("click", function () {
+  navItems1.classList.toggle("open");
+});
 
 // PART 3 QUESTIONS AND ANSWERS
-
-
-

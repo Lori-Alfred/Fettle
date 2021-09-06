@@ -1,2071 +1,1818 @@
-*,::before ,::after{  box-sizing: border-box;
-    padding: 0;
-    margin:0;
-    /* border: 1px solid red; */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
 }
-body,html {
-    overflow-x: hidden;
-    }
-body{
-    font-family: 'Roboto', sans-serif;
-    background: grey;
-    
+body,
+html {
+  overflow-x: hidden;
 }
-.container{
-    width: 100%;
-    max-width:2560px;
-    margin: auto;
-
+body {
+  font-family: "Roboto", sans-serif;
+  background: grey;
+}
+.container {
+  width: 100%;
+  max-width: 2560px;
+  margin: auto;
 }
 /* HEADER SECTION NAVIGATION AREA */
 
-.logoName li{
-    padding-left:1.5rem ;
-    padding-top: 10px ;
-    
+.logoName li {
+  padding-left: 1.5rem;
+  padding-top: 10px;
 }
-.logoName li a{
-    list-style-type: none;
-    text-decoration: none;
-    color: #ffffff;
-   
-} 
-
-.navItems li{
-    list-style-type:none;
-    padding: 10px;
-    padding-left: 1.25rem;
-    padding-right:2.313rem;
-      
+.logoName li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-
-.navItems li a{
-    text-decoration:none;
-     color: #ffff;
-    
-}
-.navItems li a:hover{
-     color:#fca311;
-    
+.navItems li {
+  list-style-type: none;
+  padding: 10px;
+  padding-left: 1.25rem;
+  padding-right: 2.313rem;
 }
 
-
-.logoName{
-    display: flex;
-    justify-content: flex-start;
-    flex: 1 1 0;
-    font-family: 'Yeseva One', cursive;
-    font-size:1.5rem;
-    
+.navItems li a {
+  text-decoration: none;
+  color: #ffff;
 }
-.navItems{
-    display: flex;
-    justify-content: flex-end;
-    flex: 1 1 0;
-    padding-bottom: 0.5rem ;
+.navItems li a:hover {
+  color: #fca311;
 }
 
-.navBar{
-    display: flex;
-    height: 6vh;
-    background-color: #000000;
-   
+.logoName {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 1 0;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.5rem;
+}
+.navItems {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 0;
+  padding-bottom: 0.5rem;
+}
+
+.navBar {
+  display: flex;
+  height: 6vh;
+  background-color: #000000;
 }
 .hireCategories1 {
-    display: block;
-    position: absolute;
-    z-index: 8; 
-    left: 40rem;
-     text-align: center;
+  display: block;
+  position: absolute;
+  z-index: 8;
+  left: 40rem;
+  text-align: center;
 }
 
-
-
-.hire p{
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
+.hire p {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
 }
-.hireCategories1{
- display:flex;
-  background-color:rgba(0,0,0,0.5);
+.hireCategories1 {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
   padding-top: 3rem;
-  margin-top: 0.5rem; 
-  z-index: 8; 
+  margin-top: 0.2rem;
+  z-index: 8;
 }
-.hireCategories1 li{
-list-style: none;
+.hireCategories1 li {
+  list-style: none;
 }
-.hireCategories1 li ul li{
-list-style: none;
+.hireCategories1 li ul li {
+  list-style: none;
 }
-.hireCategories1 li ul li a{
-    text-decoration: none;
+.hireCategories1 li ul li a {
+  text-decoration: none;
 }
 
-
-.hire h5{
-    text-align:center;
-
+.hire h5 {
+  text-align: center;
 }
-.hireCategories1 li{
-    display: none;
-} 
-.hire:hover .hireCategories1 li  {
-    display: block;
-} 
+.hireCategories1 li {
+  display: none;
+}
 
-
+.hire:hover .hireCategories1 li {
+  display: block;
+}
 
 /* HEROPAGE */
-.heropage{
-    /* display: flex;
+.heropage {
+  /* display: flex;
     flex-flow: column;
     flex: 1 1 0; */
-    position:relative;
-    top: 0;
-     left: 0;
-     z-index: 0; 
-    
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
-.heropage{
-
-    background-image: url(images/heroimage.jpg);
-    background-repeat: no-repeat;
-    background-position:center center;
-    background-size:cover;
-    height: 90vh;
-    overflow: hidden;
-      
+.heropage {
+  background-image: url(images/heroimage.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden;
 }
-.heropage::after{
-    content:"";
-    display:block ;
-    background-color:black ;
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    top: 0;
-    left: 0;
-    opacity: .4;
-     z-index:1;
-     /* overflow: hidden; */
+.heropage::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: 1;
+  /* overflow: hidden; */
 }
-.pageheading{
-    color: white;
-    position: relative;
-    top: 92px;
-    left:35px;
-    z-index: 3;
-    font-size:1.5rem;
+.pageheading {
+  color: white;
+  position: relative;
+  top: 92px;
+  left: 35px;
+  z-index: 3;
+  font-size: 1.5rem;
 }
- .pageheading .home {
-    color:#fca311;
+.pageheading .home {
+  color: #fca311;
 }
 .pageWord {
-    width: 80%;
-    color:white;
-    position: relative;
-    top: 92px;
-    left:35px;
-    z-index: 3;
-    font-size:1.25rem;
-    
+  width: 80%;
+  color: white;
+  position: relative;
+  top: 92px;
+  left: 35px;
+  z-index: 3;
+  font-size: 1.25rem;
 }
-.hirebtn1{
-    position: relative;
-    top: 110px;
-    left:35px;
-    z-index: 3;
-    font-size:20px;
+.hirebtn1 {
+  position: relative;
+  top: 110px;
+  left: 35px;
+  z-index: 3;
+  font-size: 20px;
 }
-.hirebtn1 a{
-    color: white;
-    text-decoration: none;
-    
-
+.hirebtn1 a {
+  color: white;
+  text-decoration: none;
 }
-.hirebtn1{
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    padding-top:10px;
-    border: 1px solid #fca311 ;
-    border-radius:40px;
-    background-color: #fca311;
+.hirebtn1 {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  border: 1px solid #fca311;
+  border-radius: 40px;
+  background-color: #fca311;
 }
-.hirebtn1 a:hover{
-    color: #80591b;
-
+.hirebtn1 a:hover {
+  color: #80591b;
 }
-
 
 /* QUOTE SECTION */
-.quoteitalic{
-    /* display: flex;
+.quoteitalic {
+  /* display: flex;
     flex-flow: column;
     flex: 1 1 0; */
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
-    height:30vh ;
-    font-style: italic;
-    font-weight: 200;
-    padding-top: 10px;
-    padding-left: 20px;
-  
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  height: 30vh;
+  font-style: italic;
+  font-weight: 200;
+  padding-top: 10px;
+  padding-left: 20px;
 }
-.quote h1{
-    opacity: 0.52;
-    font-weight: 200;
-    font-size:40px;
+.quote h1 {
+  opacity: 0.52;
+  font-weight: 200;
+  font-size: 40px;
 }
-.quote .fitness{
-    text-align: center;
+.quote .fitness {
+  text-align: center;
 }
-.quote .goal{
-    text-align: center;
-    padding-top: 20px;
+.quote .goal {
+  text-align: center;
+  padding-top: 20px;
 }
 
 /* MOST HIRED CATEGORIES */
 
-.hiredCategories{
-    /* display: flex;
+.hiredCategories {
+  /* display: flex;
     flex-flow:;
     flex:1 1 0; */
-    background :rgba(2, 2, 2 ,0.83);
-    height: 10vh;
-    
+  background: rgba(2, 2, 2, 0.83);
+  height: 10vh;
 }
-.hiredCategories p{
-    color: white;
-    padding-left:20px ;
-    padding-top: 20px;
+.hiredCategories p {
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 /* PERFECTED AREA */
 /* GRID HIRED CATEGORIES */
 
-.gridcategories{
-display: grid;
-grid-template-areas:
-'strengthEquipments4 images'
- 'images2 cardioEquipments'
-;
-width: 100%;
-overflow: hidden;
-
-
+.gridcategories {
+  display: grid;
+  grid-template-areas:
+    "strengthEquipments4 images"
+    "images2 cardioEquipments";
+  width: 100%;
+  overflow: hidden;
 }
 /* STRENGTHEQUIPMENTS */
 
-.strengthEquipments4{
-    grid-area:strengthEquipments4;
-    min-height:200px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width:100%;
-    /* justify-content: center;*/
-    
+.strengthEquipments4 {
+  grid-area: strengthEquipments4;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  /* justify-content: center;*/
 }
-.strengthEquipments4 h1{
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 32px;
-    text-align: center;
-    padding-top: 40px;
-    color: white;
+.strengthEquipments4 h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
 }
-.strengthEquipments4 h1 span{
-    color: rgba(252, 163, 17, 1);
+.strengthEquipments4 h1 span {
+  color: rgba(252, 163, 17, 1);
 }
-.strengthEquipments4 p{
-    color:rgba(255, 255, 255, 1);
-    font-size:24px;
-    padding-top:40px ;
-    text-align:center;
-    padding-left:50px ;
-    font-weight: 300;
-    }
-.strengthEquipments4 button{
-    text-transform: initial;
-    margin-left: 5rem;
-    margin-top: 1.5rem;
-    color: #ffff;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px 90px;
-    background-color:rgba(20, 33, 61, 1);
-    border: 1px solid rgba(20, 33, 61, 1);
-    border-radius: 40px;
-    outline: 0;
-   
-
+.strengthEquipments4 p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  padding-top: 40px;
+  text-align: center;
+  padding-left: 50px;
+  font-weight: 300;
 }
-.strengthEquipments4 button a{
-    text-decoration: none;
-    color: white;
-
+.strengthEquipments4 button {
+  text-transform: initial;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  color: #ffff;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 90px;
+  background-color: rgba(20, 33, 61, 1);
+  border: 1px solid rgba(20, 33, 61, 1);
+  border-radius: 40px;
+  outline: 0;
 }
-.strengthEquipments4 button a:hover{
-    color: rgba(252, 163, 17, 1);
+.strengthEquipments4 button a {
+  text-decoration: none;
+  color: white;
 }
-    /* strength equipments grid  */
-.images{
-    grid-area:images ;
-    /* min-height:200px ; */
-    display: grid;
-    grid-template-areas:
-    'kettlebell1 muscles1'
-    'kettlebell2 kettlebell2';
-    width:100%;
-   
+.strengthEquipments4 button a:hover {
+  color: rgba(252, 163, 17, 1);
 }
-.kettlebell1{
-    grid-area:kettlebell1;
-    width:100%;
-    
-   
+/* strength equipments grid  */
+.images {
+  grid-area: images;
+  /* min-height:200px ; */
+  display: grid;
+  grid-template-areas:
+    "kettlebell1 muscles1"
+    "kettlebell2 kettlebell2";
+  width: 100%;
 }
-.muscles1{
-    grid-area:muscles1;
-    width:100%;
-    
-   
+.kettlebell1 {
+  grid-area: kettlebell1;
+  width: 100%;
 }
-.kettlebell2{
-    grid-area:kettlebell2;
-    width:100%;
-    
+.muscles1 {
+  grid-area: muscles1;
+  width: 100%;
 }
-  /* IMAGES2 */
-.images2{
-    grid-area:images2;
-    display: flex;
-    width:100%;
-  
-} 
-.images2 img{
-width: 100%;
+.kettlebell2 {
+  grid-area: kettlebell2;
+  width: 100%;
 }
-.images img{
-width: 100%;
+/* IMAGES2 */
+.images2 {
+  grid-area: images2;
+  display: flex;
+  width: 100%;
+}
+.images2 img {
+  width: 100%;
+}
+.images img {
+  width: 100%;
 }
 
 /* CARDIO EQUIPMENTS */
-.cardioEquipments{
-    grid-area:cardioEquipments;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center; 
-    width:100%;
+.cardioEquipments {
+  grid-area: cardioEquipments;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
-
-.cardioEquipments h1{
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 32px;
-    text-align: center;
-    padding-top: 40px;
-    color: white;
-
+.cardioEquipments h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
 }
- .cardioEquipments h1 span{
-    color: rgba(252, 163, 17, 1);
-    
-
+.cardioEquipments h1 span {
+  color: rgba(252, 163, 17, 1);
 }
-.cardioEquipments p{
-color:rgba(255, 255, 255, 1);
-font-size:24px;
-padding-top:40px ;
-text-align:center;
-/* padding-left:50px ; */
-font-weight: 300;
-    
+.cardioEquipments p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  padding-top: 40px;
+  text-align: center;
+  /* padding-left:50px ; */
+  font-weight: 300;
 }
 .cardioEquipments button {
-    text-decoration: none;
-    text-transform: initial;
-    margin-left: rem;
-    margin-top: 1.5rem;
-    color: #ffff;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px 90px;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(255, 255, 255, 1);
-    border-radius: 40px;
-    outline: 0;
- 
-    
+  text-decoration: none;
+  text-transform: initial;
+  margin-left: rem;
+  margin-top: 1.5rem;
+  color: #ffff;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 90px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 40px;
+  outline: 0;
 }
-.cardioEquipments button a{
-    text-decoration: none;
-    color: rgba(252, 163, 17, 1);
+.cardioEquipments button a {
+  text-decoration: none;
+  color: rgba(252, 163, 17, 1);
 }
-.cardioEquipments button a:hover{
-    color:rgba(20, 33, 61, 1) ;
-}
-    
-  
-    
-
-  
-    
-
- /* FITNESS AT YOUR CONVENIENCE */
-
- .fitness p {
-    background :rgba(20, 33, 61, 1);
-    height:15vh;
-    color:rgba(229, 229, 229, 1);
-    font-size: 24px;
- }
- .fitness p{
- text-align: center;
- padding-top: 30px;
- }
-.fitness p span{
-    color: rgba(252, 163, 17, 1);
-    
+.cardioEquipments button a:hover {
+  color: rgba(20, 33, 61, 1);
 }
 
+/* FITNESS AT YOUR CONVENIENCE */
+
+.fitness p {
+  background: rgba(20, 33, 61, 1);
+  height: 15vh;
+  color: rgba(229, 229, 229, 1);
+  font-size: 24px;
+}
+.fitness p {
+  text-align: center;
+  padding-top: 30px;
+}
+.fitness p span {
+  color: rgba(252, 163, 17, 1);
+}
 
 /* MAKE YOUR OWN FITNESS STORY AREA */
 
 .story {
-    display: flex;
-   flex-flow: column;
-   flex:1 1 0;
-   background :rgba(8, 18, 38, 1);
-   height: 10vh;
-   color:rgba(229, 229, 229, 1);
-   font-size: 16px;
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 0;
+  background: rgba(8, 18, 38, 1);
+  height: 10vh;
+  color: rgba(229, 229, 229, 1);
+  font-size: 16px;
 }
 
-.story p{
-    padding-top: 25px;
-    padding-left: 20px;
+.story p {
+  padding-top: 25px;
+  padding-left: 20px;
 }
 /* PICTURES GRID AREA */
-.pictures{
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    width: 100%;
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
 
-    /* grid-template-columns:repeat(auto-fit,minmax(100px,1fr)) */
-    /* overflow: hidden; */
-
+  /* grid-template-columns:repeat(auto-fit,minmax(100px,1fr)) */
+  /* overflow: hidden; */
 }
-.pictures img{
-    width: 100%;
+.pictures img {
+  width: 100%;
 }
 
 /* QUESTION AND ANSWER SECTION */
-.questions{
-    width:100%;
-    height:90vh;
-    background-color: rgba(0, 0, 0, 1);
-    color:rgba(255, 255, 255, 1);
-    padding-left: 40px;
-    padding-top: 30px;
-  
+.questions {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  padding-left: 40px;
+  padding-top: 30px;
 }
-.questions .faq a{
-    text-decoration: none;
-    color:rgba(255, 255, 255, 1); ;
-
+.questions .faq a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
 }
 
-.questions h3{
-    width: 70%;
+.questions h3 {
+  width: 70%;
 }
 
-.questions .faq{
-    border: 1px solid rgba(255, 255, 255, 1);
-    width:70%;
-    /* height:110px; */
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    cursor: pointer;
+.questions .faq {
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 70%;
+  /* height:110px; */
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  cursor: pointer;
 }
 
-
-.plus_e{
-    display:flex;
-    /* float: right; */
-    margin-right:10px;
-    justify-content: flex-end;
-    align-items:flex-start ;
-    margin-bottom: 10px;
+.plus_e {
+  display: flex;
+  /* float: right; */
+  margin-right: 10px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 10px;
 }
-.minus_e{
-    display: none;
-  
+.minus_e {
+  display: none;
 }
-.answers{
- max-height:0;
- overflow: hidden;
- position: relative;
- background:transparent ;
- color: white;
- font-size: 1rem;
- transition: max-height 2s;
-
+.answers {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  transition: max-height 2s;
 }
-.answers p{
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+.answers p {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
-.answers::before{
-    content: '';
-    position: absolute;
-    width:.6rem;
-    height: 90%;
-    background:#9db5b2;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.answers::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 90%;
+  background: #9db5b2;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
-.faq:target .answers{
-    max-height: 20rem;
+.faq:target .answers {
+  max-height: 20rem;
 }
-.faq:target .accordion-link .plus_e{
-    display: none;
+.faq:target .accordion-link .plus_e {
+  display: none;
 }
-.faq:target .accordion-link .minus_e{
-    display:block;
-    float:right;
+.faq:target .accordion-link .minus_e {
+  display: block;
+  float: right;
   margin-bottom: 5rem;
   margin-right: 0.8rem;
 }
- /* FETTLE WATERMARK AREA */
-.fettleWatermark{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-image:url(images/fieldexercise.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+/* FETTLE WATERMARK AREA */
+.fettleWatermark {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url(images/fieldexercise.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.fettleWatermark::after{
-    content:'';
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background: rgba(20, 33, 61, 0.5);
-    
-
+.fettleWatermark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(20, 33, 61, 0.5);
 }
-.fettleWatermark{
-    overflow:hidden;
-}
- 
-
-.fettleWatermark h1{
-    
-    font-family: 'Yeseva One', cursive;
-    font-size:8.75rem ;
-    
-    /* text-align: center; */
-    color:rgba(255, 255, 255, 0.6);
-    padding-top: 18.75rem;
-    padding-left:26.875rem;
-    
-
-    
+.fettleWatermark {
+  overflow: hidden;
 }
 
- .le{
-    
-    padding-left: 19.938rem;
- } 
- .fettleWatermark a{
-     position: absolute;
+.fettleWatermark h1 {
+  font-family: "Yeseva One", cursive;
+  font-size: 8.75rem;
 
-     z-index: 3;
-     text-decoration: none;
-     color: #fff;
-     font-size:20px;
-     border: none;
-     border-radius: 40px;
-     background-color: rgba(252, 163, 17, 1);
-     ;
-     padding:10px 50px;
+  /* text-align: center; */
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 18.75rem;
+  padding-left: 26.875rem;
+}
 
- }
- .fettleWatermark a{
-     margin-left:750px;
-     margin-top: 70px;
- }
- .fettleWatermark a:hover{
-     color: rgba(190, 110, 64, 0.897);
- }
+.le {
+  padding-left: 19.938rem;
+}
+.fettleWatermark a {
+  position: absolute;
 
- /********************BEGINNING OF STYLING FOR CARDIO HTML  ********************************/
- .cardio2{
-     background: url(images/cardio.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-     width: 100%;
-     height: 40vh;
-     position: relative;
+  z-index: 3;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 40px;
+  background-color: rgba(252, 163, 17, 1);
+  padding: 10px 50px;
+}
+.fettleWatermark a {
+  margin-left: 750px;
+  margin-top: 70px;
+}
+.fettleWatermark a:hover {
+  color: rgba(190, 110, 64, 0.897);
+}
 
- }
- .cardio2::after{
-     content: '';
-     position:absolute;
-     background-color:rgba(20, 33, 61, 0.51);
-     width: 100%;
-     height: 100%;
-     top: 0;
-     left: 0;
-     z-index: 1;
+/********************BEGINNING OF STYLING FOR CARDIO HTML  ********************************/
+.cardio2 {
+  background: url(images/cardio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+.cardio2::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(20, 33, 61, 0.51);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.cardio2 h2 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+  padding-left: 1.25rem;
+}
+.item-background {
+  position: relative;
+  width: 100%;
+  /* height:380vh; */
+  background-color: rgba(20, 33, 61, 1);
+  padding-bottom: 30px;
+}
 
- }
- .cardio2 h2{
-     position: absolute;
-     top: 200px;
-     left: 0;
- color: rgba(255, 255, 255, 1);
- font-weight: 700;
- text-transform: uppercase;
- z-index: 2;
- padding-left: 1.25rem;
-
- }
- .item-background{
-     position: relative;
-     width: 100%;
-     /* height:380vh; */
-     background-color:rgba(20, 33, 61, 1);
-     padding-bottom: 30px;
-     
- }
-
- .item-background .love{
+.item-background .love {
   text-align: center;
-  color:rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
   padding-top: 2rem;
- }
- .love h2 .iconify{
-     font-size: 2rem;
-     color:rgba(136, 148, 174, 1);
-
- }
- .love h2 {
-     max-width: 100%;
-     
- }
-
- .equipments{
-     padding-top: 5rem;
-     display:grid;
-     grid-template-areas: 'threadmillCircle threadmillDescription'
-                          'exerciseBicyclesDescription exerciseBicyclesCircle'
-                            'bicyclesCircle bicyclesDescription'
-                            'rowerRowingDescription rowerRowingCircle';
-    width: 100%;
-    overflow: hidden;
-    color: #ffff;
-
- }
- .equipments div img{
-     width: 95%;
- }
- 
- .threadmillCircle{
-
-     grid-area:threadmillCircle;
-     max-width: 77%;
-     height:82.58258258258259vh;
-     background-color:rgba(86, 98, 125, 1);
-     ;
-     margin-left: 20px;
-     border-radius:50%;
-
-
- }
-  
-
-.threadmillDescription{
-    grid-area:threadmillDescription;
-    padding-top: 4rem;
-
 }
-.threadmillDescription h2{
-    text-align: center;
-}
-.threadmillDescription p{
-    text-align: center;
-    padding-top: 1rem;
-}
-.exerciseBicyclesDescription {
-    grid-area:exerciseBicyclesDescription;
-    padding-top: 4rem;
-    padding-left: 3rem;
-
-}
-.exerciseBicyclesDescription h2{
-text-align: center;
-}
-.exerciseBicyclesDescription p{
-text-align: center;
-padding-top: 1rem;
-}
-.exerciseBicyclesCircle{
-    grid-area:exerciseBicyclesCircle;
-    max-width: 77%;
-    height:82.58258258258259vh;
-    background-color:rgba(86, 98, 125, 1);
-    
-    margin-left: 20px;
-    border-radius:50%;
-}
-.exerciseBicyclesPicture> img{
- padding-left:6rem;
- padding-bottom: 1rem;
- width:400px;
-}
-.bicyclesCircle{
-    grid-area:bicyclesCircle;
-    max-width: 77%;
-    height:82.58258258258259vh;
-    background-color:rgba(86, 98, 125, 1);
-    
-    margin-left: 20px;
-    border-radius:50%;
-}
-.bicyclesDescription{
-    grid-area:bicyclesDescription;
-    padding-top: 4rem;
-}
-.bicyclesDescription h2{
-    text-align:center;
-}
-.bicyclesDescription p{
-    text-align:center;
-    padding-top: 1rem;
-}
-.rowerRowingDescription{
-    grid-area:rowerRowingDescription;
-    padding-top: 4rem;
-    padding-left:1.25rem;
-
-}
-.rowerRowingDescription h2{
-    text-align: center;
-}
-.rowerRowingDescription p{
-    text-align: center;
-    padding-top: 1rem;
-}
-.rowerRowingcircle{
-    grid-area:rowerRowingCircle;
-    max-width: 77%;
- 
-    height:82.58258258258259vh;
-
-    background-color:rgba(86, 98, 125, 1);
-    margin-left: 20px;
-    border-radius:50%;
- 
-}
-/* stying of form packages */
-#subscription{
-  
-    margin-top: 1rem;
-    margin-left: 8rem;
-
-}
-#packages{
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight:bold;
-}
-.radio{
-    display: inline-block;
-    text-transform: capitalize;
-    color:#fff;
-    /* font-size:16px; */
-    font-weight: 00;
-    vertical-align: middle;
-    position: relative;
-}
-.radio + .radio  {
-    margin-left: 3rem;
-}
-
-.radio input[type="radio"]{
-    display: none;
-}
-.radio span{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border:3px solid  rgba(252, 163, 17, 1);
-    display:block;
-    position: absolute;
-    left:-30px;
-    top:0;
-    
-    
-
-}
-.radio span:after{
-    content:"";
-    height: 8px;
-    width: 8px;
-    background:rgba(190, 110, 64, 0.897);
-    ;
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    text-align: center;
-    transform: translate(-50%,-50%) scale(0);
-    border-radius:50%; 
-     transition:300ms ease-in-out 0s;
-
-}
-.radio input[type="radio"]:checked~ span:after{
-    transform: translate(-50%,-50%) scale(1);
-
-}
-#labelSize{
-    display: inline-block;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    font-size:1rem ;
-    font-weight: bold;
-
-}
-#price{
-    display: block;
-}
-#size{
-    display:inline-block;
-    text-transform: uppercase;
-    margin-top:5px;
-    margin-bottom:5px;
-    padding:10px 50px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    background-color:rgba(86, 98, 125, 1);
-    outline: 0;
-
-}
-#subscription input[type="submit"]{
-margin-top: 2rem;  
-font-size: 1.2rem;  
-background: rgba(252, 163, 17, 1);
-border: none;
-border-radius: 40px;
-padding: 10px 30px;
-color: white;
-outline: 0;
-}
-#subscription input[type="submit"]:hover{
-    color:rgba(91, 131, 105, 1);
-    ;
-}
- /* END OF STYLING OF FORMS */
-
-
- /******************** END OF STYLING FOR CARDIO HTML *************************************/
-
-
-
-  /****************************** STYLING FOR BOXING HTML ***************************************/
-  .boxing2{
-    background: url(images/boxing.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 40vh;
-    position: relative;
-
-}
-.boxing2::after{
-    content: '';
-    position:absolute;
-    background-color:rgba(20, 33, 61, 0.51);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-}
-.boxing2 h2{
-    position: absolute;
-    top: 200px;
-    left: 0;
-color: rgba(255, 255, 255, 1);
-font-weight: 700;
-text-transform: uppercase;
-z-index: 2;
-padding-left: 1.25rem;
-
-}
-.item-background{
-    position: relative;
-    width: 100%;
-    /* height:380vh; */
-    background-color:rgba(20, 33, 61, 1);
-    padding-bottom: 30px;
-    
-}
-
-.item-background .love{
- text-align: center;
- color:rgba(255, 255, 255, 1);
- padding-top: 2rem;
-}
-.love h2 .iconify{
-    font-size: 2rem;
-    color:rgba(136, 148, 174, 1);
-
+.love h2 .iconify {
+  font-size: 2rem;
+  color: rgba(136, 148, 174, 1);
 }
 .love h2 {
-    max-width: 100%;
-    
+  max-width: 100%;
+}
+
+.equipments {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-areas:
+    "threadmillCircle threadmillDescription"
+    "exerciseBicyclesDescription exerciseBicyclesCircle"
+    "bicyclesCircle bicyclesDescription"
+    "rowerRowingDescription rowerRowingCircle";
+  width: 100%;
+  overflow: hidden;
+  color: #ffff;
+}
+.equipments div img {
+  width: 95%;
+}
+
+.threadmillCircle {
+  grid-area: threadmillCircle;
+  max-width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.threadmillDescription {
+  grid-area: threadmillDescription;
+  padding-top: 4rem;
+}
+.threadmillDescription h2 {
+  text-align: center;
+}
+.threadmillDescription p {
+  text-align: center;
+  padding-top: 1rem;
+}
+.exerciseBicyclesDescription {
+  grid-area: exerciseBicyclesDescription;
+  padding-top: 4rem;
+  padding-left: 3rem;
+}
+.exerciseBicyclesDescription h2 {
+  text-align: center;
+}
+.exerciseBicyclesDescription p {
+  text-align: center;
+  padding-top: 1rem;
+}
+.exerciseBicyclesCircle {
+  grid-area: exerciseBicyclesCircle;
+  max-width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.exerciseBicyclesPicture > img {
+  padding-left: 6rem;
+  padding-bottom: 1rem;
+  width: 400px;
+}
+.bicyclesCircle {
+  grid-area: bicyclesCircle;
+  max-width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.bicyclesDescription {
+  grid-area: bicyclesDescription;
+  padding-top: 4rem;
+}
+.bicyclesDescription h2 {
+  text-align: center;
+}
+.bicyclesDescription p {
+  text-align: center;
+  padding-top: 1rem;
+}
+.rowerRowingDescription {
+  grid-area: rowerRowingDescription;
+  padding-top: 4rem;
+  padding-left: 1.25rem;
+}
+.rowerRowingDescription h2 {
+  text-align: center;
+}
+.rowerRowingDescription p {
+  text-align: center;
+  padding-top: 1rem;
+}
+.rowerRowingcircle {
+  grid-area: rowerRowingCircle;
+  max-width: 77%;
+
+  height: 82.58258258258259vh;
+
+  background-color: rgba(86, 98, 125, 1);
+  margin-left: 20px;
+  border-radius: 50%;
+}
+/* stying of form packages */
+#subscription {
+  margin-top: 1rem;
+  margin-left: 8rem;
+}
+#packages {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.radio {
+  display: inline-block;
+  text-transform: capitalize;
+  color: #fff;
+  /* font-size:16px; */
+  font-weight: 00;
+  vertical-align: middle;
+  position: relative;
+}
+.radio + .radio {
+  margin-left: 3rem;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+.radio span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid rgba(252, 163, 17, 1);
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+.radio span:after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: rgba(190, 110, 64, 0.897);
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: 300ms ease-in-out 0s;
+}
+.radio input[type="radio"]:checked ~ span:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+#labelSize {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#price {
+  display: block;
+}
+#size {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgba(86, 98, 125, 1);
+  outline: 0;
+}
+#subscription input[type="submit"] {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  background: rgba(252, 163, 17, 1);
+  border: none;
+  border-radius: 40px;
+  padding: 10px 30px;
+  color: white;
+  outline: 0;
+}
+#subscription input[type="submit"]:hover {
+  color: rgba(91, 131, 105, 1);
+}
+/* END OF STYLING OF FORMS */
+
+/******************** END OF STYLING FOR CARDIO HTML *************************************/
+
+/****************************** STYLING FOR BOXING HTML ***************************************/
+.boxing2 {
+  background: url(images/boxing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+.boxing2::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(20, 33, 61, 0.51);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.boxing2 h2 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+  padding-left: 1.25rem;
+}
+.item-background {
+  position: relative;
+  width: 100%;
+  /* height:380vh; */
+  background-color: rgba(20, 33, 61, 1);
+  padding-bottom: 30px;
+}
+
+.item-background .love {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 2rem;
+}
+.love h2 .iconify {
+  font-size: 2rem;
+  color: rgba(136, 148, 174, 1);
+}
+.love h2 {
+  max-width: 100%;
+}
+
+.equipments2 {
+  padding-top: 5rem;
+  display: grid;
+
+  grid-template-areas:
+    "heavyBagCircle heavyBagDescription "
+    "boxingGlovesDescription boxingGlovesCircle "
+    "boxingHandPadsCircle boxingHandPadsDescription";
+  width: 100%;
+  overflow: hidden;
+  color: #ffff;
+}
+
+.heavyBagCircle {
+  grid-area: heavyBagCircle;
+  max-width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.heavyBagDescription {
+  grid-area: heavyBagDescription;
+  padding-top: 4rem;
+}
+.heavyBagDescription h2 {
+  text-align: center;
+}
+.boxingGlovesDescription {
+  grid-area: boxingGlovesDescription;
+  padding-top: 4rem;
+  padding-left: 3rem;
+}
+.boxingGlovesDescription h2 {
+  text-align: center;
+}
+.boxingGlovesCircle {
+  grid-area: boxingGlovesCircle;
+  max-width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.boxingHandPadsCircle {
+  grid-area: boxingHandPadsCircle;
+  max-width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.boxingHandPadsDescription {
+  grid-area: boxingHandPadsDescription;
+  padding-top: 4rem;
+}
+.boxingHandPadsDescription h2 {
+  text-align: center;
+}
+.heavyBagPicture > img {
+  display: inline-block;
+  margin-left: 8rem;
+  width: 60%;
+}
+.boxingGlovePicture > img {
+  width: 80%;
+  display: inline-block;
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+.boxingHandPadsPictures > img {
+  width: 80%;
+  margin-left: 1rem;
+}
+
+/****************************** END FOR BOXING HTML ********************************************/
+
+/****************************BEGINNING FOR STRENGTH HTML*****************************************/
+.strength2 {
+  background: url(images/strength.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+.strength2::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(20, 33, 61, 0.51);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.strength2 h2 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+  padding-left: 1.25rem;
+}
+
+.equipments3 {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-areas:
+    "dumbbellCircle dumbbellDescription "
+    "kettlebellDescription kettlebellCircle"
+    " pullupBarCircle pullupBarDescription"
+    "balanceBallDescription balanceBallcircle";
+  width: 100%;
+  overflow: hidden;
+  color: #ffff;
+}
+.equipments3 div img {
+  width: 85%;
+}
+
+.dumbbellCircle {
+  grid-area: dumbbellCircle;
+  width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.dumbbellDescription {
+  grid-area: dumbbellDescription;
+  padding-top: 4rem;
+}
+.dumbbellDescription h2 {
+  text-align: center;
+}
+.kettlebellDescription {
+  grid-area: kettlebellDescription;
+  padding-top: 4rem;
+  padding-left: 3rem;
+}
+.kettlebellDescription h2 {
+  text-align: center;
+}
+.kettlebellCircle {
+  grid-area: kettlebellCircle;
+  max-width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.pullupBarCircle {
+  grid-area: pullupBarCircle;
+  max-width: 77%;
+  height: 82.58258258258259vh;
+  background-color: rgba(86, 98, 125, 1);
+
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.pullupBarDescription {
+  grid-area: pullupBarDescription;
+  padding-top: 4rem;
+}
+.pullupBarDescription h2 {
+  text-align: center;
+}
+.balanceBallDescription {
+  grid-area: balanceBallDescription;
+  padding-top: 4rem;
+  padding-left: 1.25rem;
+}
+.balanceBallDescription h2 {
+  text-align: center;
+}
+.balanceBallcircle {
+  grid-area: balanceBallcircle;
+  max-width: 77%;
+
+  height: 82.58258258258259vh;
+
+  background-color: rgba(86, 98, 125, 1);
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.dumbbellPicture img {
+  max-width: 95%;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+.kettlebellPicture img {
+  max-width: 95%;
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+.pullBarPictures img {
+  max-width: 95%;
+}
+.balancePicture img {
+  max-width: 95%;
+  margin-top: 4rem;
+}
+
+/****************************END FOR STRENGTH HTML***********************************************/
+
+/****************************START FOR TRAINER HTML**********************************************/
+.scontainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url(images/trainerHome.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+
+  color: #fff;
+}
+.scontainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 33, 61, 0.51);
+  z-index: 2;
+}
+.fettleTrainer h1 {
+  display: inline-block;
+  position: relative;
+  font-family: "Yeseva One", cursive;
+  text-transform: uppercase;
+  z-index: 5;
+  margin-top: 5rem;
+}
+.fettleTrainer span {
+  color: rgba(252, 163, 17, 1);
+}
+
+.fettleTrainer h1 {
+  text-align: center;
+}
+.fettleTrainer h3 {
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 5;
+  margin-top: 1rem;
+}
+.fettleTrainer h4 {
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 1rem;
+  z-index: 5;
+}
+
+.fettleTrainer p {
+  text-transform: capitalize;
+  position: relative;
+  margin-top: 1rem;
+  z-index: 5;
+}
+.fettleTrainer .ready {
+  font-weight: lighter;
+}
+.trainerForm {
+  position: relative;
+  z-index: 5;
+}
+.trainerForm input[type="email"] {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 5px 40px;
+  outline: 0;
+}
+.trainerForm button {
+  display: inline-block;
+  padding: 5px 15px;
+  outline: 0;
+  margin-right: 0;
+  background-color: rgba(252, 163, 17, 1);
+  color: #fff;
+  border: 1px solid rgba(252, 163, 17, 1);
+  border-radius: 0 40px;
+}
+.trainerForm button:hover {
+  color: rgba(86, 98, 125, 1);
+}
+.trainerForm ::placeholder {
+  color: rgba(136, 148, 174, 1);
+}
+
+.launch {
+  background-color: rgba(20, 33, 61, 1);
+  height: 40vh;
+  overflow: hidden;
+  color: rgba(229, 229, 229, 1);
+  text-align: center;
+  text-transform: uppercase;
+}
+.launch h1 {
+  margin-top: 1rem;
+}
+.launch .timerCountdown {
+  font-size: 3rem;
+}
+.launch .timerCountdown span sub {
+  font-size: 0.8rem;
+}
+
+/***************************END FOR TRAINER HTML*************************************************/
+
+/****************************BEGINNING OF STORE*******************************************************/
+
+.sscontainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url(images/store.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+
+  color: #fff;
+}
+.sscontainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 33, 61, 0.51);
+  z-index: 2;
+}
+.fettleStore h1 {
+  display: inline-block;
+  position: relative;
+  font-family: "Yeseva One", cursive;
+  text-transform: uppercase;
+  z-index: 5;
+  margin-top: 5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.fettleStore span {
+  color: rgb(92, 133, 221);
+}
+
+.fettleStore h1 {
+  text-align: center;
+}
+.fettleStore h3 {
+  display: block;
+  text-transform: initial;
+  position: relative;
+  z-index: 5;
+  margin-top: 2rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.fettleStore h4 {
+  display: block;
+  text-transform: none;
+  position: relative;
+  margin-top: 1rem;
+  z-index: 5;
+  font-weight: normal;
+}
+
+.fettleStore .readyS {
+  display: block;
+  font-weight: lighter;
+}
+
+.storeForm {
+  position: relative;
+  z-index: 5;
+}
+.storeForm input[type="email"] {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 5px 40px;
+  outline: 0;
+}
+.storeForm button {
+  display: inline-block;
+  padding: 5px 15px;
+  outline: 0;
+  margin-right: 0;
+  background-color: rgb(92, 133, 221);
+  color: #fff;
+  border: 1px solid rgb(92, 133, 221);
+  border-radius: 0 40px;
+}
+.storeForm button:hover {
+  color: rgb(206, 206, 206);
+}
+.storeForm ::placeholder {
+  color: rgba(136, 148, 174, 1);
+}
+
+/***************************ENDING  FOR STORE*************************************************/
+/* SUBSCRIBE AND FOOTER AREA */
+.footerS {
+  width: 100%;
+  background-color: rgba(20, 33, 61, 0.83);
+}
+.catchup {
+  margin: auto;
+}
+.catchup h1 {
+  color: rgba(149, 168, 210, 1);
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  padding-top: 2.5rem;
+}
+.catchup {
+  color: rgba(229, 229, 229, 1);
+}
+.catchup input[type="email"] {
+  display: block;
+  width: 40%;
+  height: 10vh;
+  /* padding: 1% 10%; */
+  color: rgba(229, 229, 229, 1);
+  border: 1px solid #95a8d2;
+  border-radius: 40px;
+  background-color: rgba(20, 33, 61, 0.83);
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 30%;
+  cursor: pointer;
+  outline: 0;
+}
+::placeholder {
+  color: rgba(229, 229, 229, 1);
+}
+.catchup input[type="submit"] {
+  display: block;
+  width: 15%;
+  height: 10vh;
+  color: rgba(20, 33, 61, 0.83);
+  border-radius: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 150%;
+  margin-top: 4%;
+  margin-left: 43%;
+  outline: 0;
+}
+
+.catchup input[type="submit"]:hover {
+  color: rgba(149, 168, 210, 1);
+  outline: 0;
+}
+.fettleLine {
+  color: white;
+  margin-top: 20%;
 }
-
-.equipments2{
-    padding-top: 5rem;
-    display:grid;
-   
-    grid-template-areas: 'heavyBagCircle heavyBagDescription '
-                         'boxingGlovesDescription boxingGlovesCircle '
-                           'boxingHandPadsCircle boxingHandPadsDescription';
-   width: 100%;
-   overflow: hidden;
-   color: #ffff;
-
-}
-
-
-
-.heavyBagCircle{
-
-    grid-area:heavyBagCircle;
-    max-width: 77%;
-    height:82.58258258258259vh;
-    background-color:rgba(86, 98, 125, 1);
-    ;
-    margin-left: 20px;
-    border-radius:50%;
-
-
-}
- 
-
-.heavyBagDescription{
-
-   grid-area:heavyBagDescription;
-   padding-top: 4rem;
-
-}
-.heavyBagDescription h2{
-   text-align: center;
-}
-.boxingGlovesDescription{
-   grid-area:boxingGlovesDescription;
-   padding-top: 4rem;
-   padding-left: 3rem;
-
-}
-.boxingGlovesDescription h2{
-text-align: center;
-}
-.boxingGlovesCircle{
-   grid-area:boxingGlovesCircle;
-   max-width: 77%;
-   height:82.58258258258259vh;
-   background-color:rgba(86, 98, 125, 1);
-   
-   margin-left: 20px;
-   border-radius:50%;
-}
-
-.boxingHandPadsCircle{
-   grid-area:boxingHandPadsCircle;
-   max-width: 77%;
-   height:82.58258258258259vh;
-   background-color:rgba(86, 98, 125, 1);
-   
-   margin-left: 20px;
-   border-radius:50%;
-}
-.boxingHandPadsDescription{
-   grid-area:boxingHandPadsDescription;
-   padding-top: 4rem;
-}
-.boxingHandPadsDescription h2{
-   text-align:center;
-}
-.heavyBagPicture>img{
-    display: inline-block;
-    margin-left: 8rem;
-    width: 60%;
-}
-.boxingGlovePicture>img{
-    width: 80%;
-    display: inline-block;
-    margin-top: 4rem;
-    margin-left: 3rem;
-
-
-}
-.boxingHandPadsPictures>img{
-    width: 80%;
-    margin-left: 1rem;
-
-}
-
-
-
-  /****************************** END FOR BOXING HTML ********************************************/
- 
- /****************************BEGINNING FOR STRENGTH HTML*****************************************/
- .strength2{
-    background: url(images/strength.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 40vh;
-    position: relative;
-
-}
-.strength2::after{
-    content: '';
-    position:absolute;
-    background-color:rgba(20, 33, 61, 0.51);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-}
-.strength2 h2{
-    position: absolute;
-    top: 200px;
-    left: 0;
-color: rgba(255, 255, 255, 1);
-font-weight: 700;
-text-transform: uppercase;
-z-index: 2;
-padding-left: 1.25rem;
-
-}
-
- .equipments3{
-    padding-top: 5rem;
-    display:grid;
-    grid-template-areas: 'dumbbellCircle dumbbellDescription '
-                         'kettlebellDescription kettlebellCircle'
-                         ' pullupBarCircle pullupBarDescription'
-                         'balanceBallDescription balanceBallcircle';
-   width: 100%;
-   overflow: hidden;
-   color: #ffff;
-
-}
-.equipments3 div img{
-    width:85%;
-}
-
-
-.dumbbellCircle{
-    grid-area:dumbbellCircle;
-    width: 77%;
-    height:82.58258258258259vh;
-    background-color:rgba(86, 98, 125, 1);
-    margin-left: 20px;
-    border-radius:50%;
-
-
-}
- 
-
-.dumbbellDescription{
-grid-area:dumbbellDescription;
-   padding-top: 4rem;
-
-}
-.dumbbellDescription h2{
-   text-align: center;
-}
-.kettlebellDescription{
-   grid-area:kettlebellDescription;
-   padding-top: 4rem;
-   padding-left: 3rem;
-
-}
-.kettlebellDescription h2{
-text-align: center;
-}
-.kettlebellCircle{
-   grid-area:kettlebellCircle;
-   max-width: 77%;
-   height:82.58258258258259vh;
-   background-color:rgba(86, 98, 125, 1);
-   margin-left: 20px;
-   border-radius:50%;
-}
-
-.pullupBarCircle{
-   grid-area:pullupBarCircle;
-   max-width: 77%;
-   height:82.58258258258259vh;
-   background-color:rgba(86, 98, 125, 1);
-   
-   margin-left: 20px;
-   border-radius:50%;
-}
-.pullupBarDescription{
-   grid-area:pullupBarDescription;
-   padding-top: 4rem;
-}
-.pullupBarDescription h2{
-   text-align:center;
-}
-.balanceBallDescription{
-   grid-area:balanceBallDescription;
-   padding-top: 4rem;
-   padding-left:1.25rem;
-
-}
-.balanceBallDescription h2{
-   text-align: center;
-}
-.balanceBallcircle{
-   grid-area:balanceBallcircle;
-   max-width: 77%;
-
-   height:82.58258258258259vh;
-
-   background-color:rgba(86, 98, 125, 1);
-   margin-left: 20px;
-   border-radius:50%;
-
-}
-.dumbbellPicture img{
-    max-width: 95%;
-    margin-left: 4rem;
-    margin-top: 2rem;
-
-}
-.kettlebellPicture img{
-    max-width: 95%;
-    margin-top: 5rem;
-    margin-left: 4rem;
-}
-.pullBarPictures img{
-    max-width: 95%;
-}
-.balancePicture img{
-max-width:95% ;
-margin-top: 4rem;
-}
-
-
- /****************************END FOR STRENGTH HTML***********************************************/
-  
- /****************************START FOR TRAINER HTML**********************************************/
-.scontainer{
-    position: relative;
-    top: 0;
-    left: 0;
-    background-image: url(images/trainerHome.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    z-index: 1;
-    overflow: hidden;
-    text-align: center;
-
-    color: #fff;
- 
-}
-.scontainer::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(20, 33, 61, 0.51);
-    z-index: 2;
-   
-
-}
-.fettleTrainer h1{
-    display: inline-block;
-    position: relative;
-    font-family: 'Yeseva One', cursive;
-    text-transform: uppercase;
-    z-index: 5;
-    margin-top: 5rem;
-}
-.fettleTrainer span{
-    color: rgba(252, 163, 17, 1);
-}
-   
-
-.fettleTrainer h1{
-    text-align: center;
-}
-.fettleTrainer h3{
-    display: block;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 5;
-    margin-top: 1rem;
-    
-}
-.fettleTrainer h4{
-    display: block;
-    text-transform: uppercase;
-    position: relative;
-    margin-top: 1rem;
-    z-index: 5;
-
-}
-
-.fettleTrainer p{
-    text-transform:capitalize;
-    position: relative;
-    margin-top: 1rem;
-    z-index: 5;
-
-}
-.fettleTrainer .ready{
-    font-weight: lighter;
-   
-}
-.trainerForm{
-    position: relative;
-    z-index: 5;
-
-}
-.trainerForm input[type=email]{
-display: inline-block;
-margin-top: 1rem;
-padding:5px 40px;
-outline: 0;
-
-}
-.trainerForm button{
-    display:inline-block;
-    padding: 5px 15px;
-    outline: 0;
-    margin-right:0;
-    background-color:rgba(252, 163, 17, 1);
-    color:#fff;
-    border:1px solid rgba(252, 163, 17, 1);
-    border-radius:0 40px;
-
-} 
-.trainerForm button:hover{
-    color: rgba(86, 98, 125, 1);
-}
-.trainerForm ::placeholder{
-    color:rgba(136, 148, 174, 1);
-}  
-
-.launch{
-    background-color:rgba(20, 33, 61, 1);
-    height:40vh;
-    overflow: hidden;
-    color: rgba(229, 229, 229, 1);
-    text-align: center;
-    text-transform: uppercase;
-    
-}
-.launch h1{
-    margin-top: 1rem;
-}
-.launch .timerCountdown{
- font-size: 3rem;
-}
-.launch .timerCountdown span sub{
- font-size: 0.8rem;
-}
-
- /***************************END FOR TRAINER HTML*************************************************/
- 
-
- /****************************BEGINNING OF STORE*******************************************************/
-
- .sscontainer{
-    position: relative;
-    top: 0;
-    left: 0;
-    background-image: url(images/store.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    z-index: 1;
-    overflow: hidden;
-    text-align: center;
-
-    color: #fff;
- 
-}
-.sscontainer::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(20, 33, 61, 0.51);
-    z-index: 2;
-   
-
-}
-.fettleStore h1{
-    display: inline-block;
-    position: relative;
-    font-family: 'Yeseva One', cursive;
-    text-transform: uppercase;
-    z-index: 5;
-    margin-top: 5rem;
-    color: rgba(255, 255, 255, 0.6);
-}
-.fettleStore span{
-    color: rgb(92, 133, 221);
-}
-   
-
-.fettleStore h1{
-    text-align: center;
-}
-.fettleStore h3{
-    display: block;
-    text-transform: initial;
-    position: relative;
-    z-index: 5;
-    margin-top: 2rem;
-    font-weight: 800;
-    font-size: 1.5rem;
-    
-}
-.fettleStore h4{
-    display: block;
-    text-transform: none;
-    position: relative;
-    margin-top: 1rem;
-    z-index: 5;
-    font-weight:normal;
-
-}
-
-
-.fettleStore .readyS{
-    display: block;
-    font-weight: lighter;
-
-    
-    
-    
-   
-}
-
-
-.storeForm{
-    position: relative;
-    z-index: 5;
-
-}
-.storeForm input[type=email]{
-display: inline-block;
-margin-top: 1rem;
-padding:5px 40px;
-outline: 0;
-
-}
-.storeForm button{
-    display:inline-block;
-    padding: 5px 15px;
-    outline: 0;
-    margin-right:0;
-    background-color: rgb(92, 133, 221);
-    color:#fff;
-    border:1px solid  rgb(92, 133, 221);
-    border-radius:0 40px;
-
-} 
-.storeForm button:hover{
-    color: rgb(206, 206, 206);
-}
-.storeForm ::placeholder{
-    color:rgba(136, 148, 174, 1);
-}  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /***************************ENDING  FOR STORE*************************************************/
- /* SUBSCRIBE AND FOOTER AREA */
- .footerS{
-     width: 100%;
-     background-color:rgba(20, 33, 61, 0.83);
-     
- }
- .catchup{
-     margin: auto;
-
-} 
-  .catchup h1{
-     color:rgba(149, 168, 210, 1);
-     text-align: center;
-     font-size:3.5rem ;
-     font-weight: 500;
-     line-height:1.6;
-     padding-top:2.5rem;
-     
- }
- .catchup{
-    color:rgba(229, 229, 229, 1);
- 
-
- }
- .catchup input[type=email]{
-     display: block;
-     width: 40%;
-     height: 10vh;
-     /* padding: 1% 10%; */
-    color:rgba(229, 229, 229, 1);
-    border:1px solid #95A8D2;
-     border-radius: 40px;
-     background-color:rgba(20, 33, 61, 0.83);
-     text-align:center;
-    margin-top: 2%;
-    margin-left: 30%;
-    cursor: pointer;
-    outline: 0;
-
-
-
- }
- ::placeholder{
-     color: rgba(229, 229, 229, 1);
-     
- }
- .catchup input[type=submit]{
-     display: block;
-     width: 15%;
-     height: 10vh;
-     color: rgba(20, 33, 61, 0.83);
-     border-radius: 40px;
-     text-align: center;
-     background-color:rgba(255, 255, 255, 1);
-     font-weight: bold;
-     font-size: 150%;
-      margin-top: 4%;
-      margin-left: 43%;
-      outline: 0;
-
-
- }
-  
-     
-     
-      
-.catchup input[type=submit]:hover{
-    color:rgba(149, 168, 210, 1);
-    outline: 0;
-
-}
-.fettleLine{
-color:white;
-margin-top: 20%;
-}
-
 
 .fettleLine h4 {
-    font-family:'Yeseva One', cursive; 
-    margin-left:1%;
-
-
+  font-family: "Yeseva One", cursive;
+  margin-left: 1%;
 }
-.fettleLine  h4 a{
-    text-decoration:none ;
-    color:white;
+.fettleLine h4 a {
+  text-decoration: none;
+  color: white;
 }
-.fettleLine h5{
-    display:block;
-    float:right;
-    margin-right: 1%;
+.fettleLine h5 {
+  display: block;
+  float: right;
+  margin-right: 1%;
 }
-.fettleLine  h5 a{
-    text-decoration:none ;
-    color:white;
+.fettleLine h5 a {
+  text-decoration: none;
+  color: white;
 }
-.arrowTop{
-    background: rgba(20, 33, 61, 1);
-
+.arrowTop {
+  background: rgba(20, 33, 61, 1);
 }
-.horizontalLine{
-    border-bottom:1px solid #95A8D2;
-    
+.horizontalLine {
+  border-bottom: 1px solid #95a8d2;
 }
 
 /* footer area */
-.footerArea{
-    margin-top: 40px;
+.footerArea {
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas: "hireA trainerA storeA contactA";
+  justify-content: space-around;
+  padding-bottom: 100px;
+  color: rgba(229, 229, 229, 1);
+  font-weight: 400;
+}
+.footerArea h3 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.footerArea p a {
+  text-decoration: none;
+  color: rgba(229, 229, 229, 1);
+}
+.footerArea p a:hover {
+  color: #95a8d2;
+}
+.hireA {
+  grid-area: hireA;
+}
+
+.trainerA {
+  grid-area: trainerA;
+}
+.storeA {
+  grid-area: storeA;
+}
+.contactA {
+  grid-area: contactA;
+}
+.contactA a {
+  display: block;
+  text-decoration: none;
+  color: rgba(229, 229, 229, 1);
+  padding: 2px;
+}
+.contactA a:hover {
+  color: #95a8d2;
+}
+.contactA .social {
+  display: inline;
+  padding: 10px 10px;
+}
+.copy {
+  color: white;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .quoteitalic {
+    height: 40vh;
+  }
+  .gridcategories {
     display: grid;
-    grid-template-areas:'hireA trainerA storeA contactA' ;
+    grid-template-areas:
+      "strengthEquipments4 "
+      "images"
+      " cardioEquipments"
+      "images2 ";
+  }
+  .strengthEquipments4 {
+    height: 70vh;
+  }
+
+  .strengthEquipments4 h1 {
+    font-size: 2rem;
+  }
+  .strengthEquipments4 p {
+    font-size: 1.5rem;
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 50px;
+  }
+  .strengthEquipments4 button {
+    text-transform: initial;
+    margin-left: 2rem;
+    margin-top: 3rem;
+
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 50px;
+  }
+  .cardioEquipments {
+    height: 70vh;
+  }
+  .cardioEquipments h1 {
+    font-size: 2rem;
+  }
+  .cardioEquipments p {
+    font-size: 1.5rem;
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 50px;
+  }
+  .cardioEquipments button {
+    text-transform: initial;
+    margin-left: 2rem;
+    margin-top: 3rem;
+
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 50px;
+  }
+
+  .pictures {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .fettleWatermark h1 {
+    display: none;
+  }
+
+  .fettleWatermark a {
+    margin-bottom: 10rem;
+    top: 20rem;
+    display: block;
+
+    margin-left: 40%;
+  }
+  .footerArea {
+    grid-template-areas:
+      "hireA "
+      "trainerA "
+      " storeA"
+      " contactA";
     justify-content: space-around;
     padding-bottom: 100px;
     color: rgba(229, 229, 229, 1);
     font-weight: 400;
-    
-}
-.footerArea h3{
-    text-transform: uppercase;
-    padding-bottom: 15px;
+  }
 
-}
-.footerArea p a{
-    text-decoration: none;
-    color: rgba(229, 229, 229, 1);
+  .footerArea h3 {
+    padding-top: 2rem;
+  }
 
-}
-.footerArea p a:hover{
-    color:#95A8D2 ;
+  .catchup h1 {
+    font-size: 2rem;
+  }
+  .catchup input[type="email"] {
+    width: 70%;
+    height: 8vh;
 
-}
-.hireA{
-    grid-area: hireA;
-    
-}
+    margin-top: 5%;
+    margin-left: 18%;
+  }
 
-.trainerA{
-    grid-area: trainerA;
-}
-.storeA{
-    grid-area: storeA;
-}
-.contactA{
-    grid-area: contactA;
-}
-.contactA a{
-    display: block;
-text-decoration: none;
-color: rgba(229, 229, 229, 1);
-padding: 2px;
+  .catchup input[type="submit"] {
+    width: 30%;
+    height: 8vh;
 
-}
-.contactA a:hover{
-    color:#95A8D2
-}
-.contactA .social{
-    display: inline;
-    padding:10px 10px;
-} 
-.copy{
-    color: white;
-    margin-left: 10px;
-    padding-bottom: 20px;
-    font-size: 12px;
-}
+    font-size: 1rem;
+    margin-top: 4%;
+    margin-left: 40%;
+  }
 
+  .equipments {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-areas:
+      "threadmillCircle "
+      " threadmillDescription"
+      " exerciseBicyclesCircle"
+      "exerciseBicyclesDescription"
+      "bicyclesCircle "
+      " bicyclesDescription"
+      " rowerRowingCircle"
+      "rowerRowingDescription ";
+    width: 100%;
+    overflow: hidden;
+    color: #ffff;
+  }
+  .threadmillCircle {
+    grid-area: threadmillCircle;
+    width: 95%;
+    height: 60vh;
 
-/* MOBILE */
-@media screen and (max-width: 768px) {
+    border-radius: 50%;
+    margin-left: 3rem;
+  }
 
-   
-    .quoteitalic {
-       
-        height: 40vh;
-      
-    }
-    .gridcategories {
-        display: grid;
-        grid-template-areas:
-            'strengthEquipments4 '
-            'images'
-            ' cardioEquipments'
-            'images2 '
-            ;
-
-    }
-    .strengthEquipments4 {
-       
-        height: 70vh;
-        
-    
-    }
-
-    .strengthEquipments4 h1 {
-        
-        font-size: 2rem;
-    }
-    .strengthEquipments4 p {
-       
-        font-size: 1.5rem;
-        padding-top: 15px;
-        text-align: left;
-        padding-left: 50px;
-       
-    }
-    .strengthEquipments4 button {
-        text-transform: initial;
-        margin-left: 2rem;
-        margin-top: 3rem;
-        
-        font-size: 1rem;
-        text-align: center;
-        padding: 10px 50px;
-        
-    }
-    .cardioEquipments{
-        height: 70vh;
-    }
-    .cardioEquipments h1{
-        font-size: 2rem;
-    }
-    .cardioEquipments p{
-        font-size: 1.5rem;
-        padding-top: 15px;
-        text-align: left;
-        padding-left: 50px;
-    }
-    .cardioEquipments button{
-        text-transform: initial;
-        margin-left: 2rem;
-        margin-top: 3rem;
-        
-        font-size: 1rem;
-        text-align: center;
-        padding: 10px 50px;
-        
-    }
-
-
-    .pictures {
-       
-        grid-template-columns: repeat(2,1fr);
-        width: 100%;
-        
-    }
-    .fettleWatermark h1 {
-        display: none;
-    }
-
-    .fettleWatermark a {
-        margin-bottom: 10rem;
-        top: 20rem;
-        display: block;
-       
-        margin-left: 40%;
-       
-    }
-    .footerArea {
-        grid-template-areas: 'hireA '
-        'trainerA '
-        ' storeA'
-        ' contactA' ;
-        justify-content: space-around;
-        padding-bottom: 100px;
-        color: rgba(229, 229, 229, 1);
-        font-weight: 400;
-    }
- 
-    .footerArea h3 {
-        padding-top: 2rem;
-    }
-
-    .catchup h1 {
-        font-size: 2rem;
-       
-    }
-    .catchup input[type=email] {
-       
-        width: 70%;
-        height: 8vh;
-       
-        margin-top: 5%;
-        margin-left: 18%;
-    
-    }
-
-    .catchup input[type=submit] {
-    
-       width: 30%;
-        height: 8vh;
-        
-        font-size: 1rem;
-        margin-top: 4%;
-        margin-left: 40%;
-        
-    }
-    
-    .equipments {
-        padding-top: 5rem;
-        display: grid;
-        grid-template-areas:
-            'threadmillCircle '
-            ' threadmillDescription'
-            
-            ' exerciseBicyclesCircle'
-            'exerciseBicyclesDescription'
-            'bicyclesCircle '
-            ' bicyclesDescription'
-            ' rowerRowingCircle'
-            'rowerRowingDescription ' ;
-        width: 100%;
-        overflow: hidden;
-        color: #ffff
-
-    }
-    .threadmillCircle {
-        grid-area: threadmillCircle;
-        width: 95%;
-        height: 60vh;
-
-        border-radius: 50%;
-        margin-left: 3rem;
-    }
-
-    .equipments div img {
-        width: 100%;
-    }
-    .threadmillDescription p {
-        text-align: center;
-        padding-top: 1rem;
-        font-size: 90%;
-        
-    }
-    .threadmillDescription  {
-     padding-bottom:3rem ;
-        
-    }
-
-    .exerciseBicyclesCircle {
-        grid-area: exerciseBicyclesCircle;
-        width: 75%;
-        height: 60vh;
-        margin-left: 3rem;
-    }
-
-    .exerciseBicyclesPicture img{
-        display: inline-block;
-       margin-right: 4rem;
-    }
-    .exerciseBicyclesDescription p{
+  .equipments div img {
+    width: 100%;
+  }
+  .threadmillDescription p {
     text-align: center;
     padding-top: 1rem;
     font-size: 90%;
-    }
+  }
+  .threadmillDescription {
+    padding-bottom: 3rem;
+  }
 
-    .exerciseBicyclesDescription {
-        grid-area: exerciseBicyclesDescription;
-        padding-top: 4rem;
-        padding-left:0;
-        padding-bottom: 3rem;
-    }
-    .bicyclesCircle {
-        grid-area: bicyclesCircle;
-        width: 95%;
-        height: 60vh;
- padding-bottom: 2rem;
-        border-radius: 50%;
-        margin-left: 3rem;
-    }
-    .bicyclesDescription {
-      padding-bottom: 2rem;
-    }
+  .exerciseBicyclesCircle {
+    grid-area: exerciseBicyclesCircle;
+    width: 75%;
+    height: 60vh;
+    margin-left: 3rem;
+  }
 
-    .bicyclesPictures img{
-        /* width: 100%; */
-    }
+  .exerciseBicyclesPicture img {
+    display: inline-block;
+    margin-right: 4rem;
+  }
+  .exerciseBicyclesDescription p {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 90%;
+  }
 
-    .rowerRowingcircle {
-        width: 95%;
-        height: 60vh;
-     padding-bottom: 2rem;
-        margin-left: 3rem;
-    }
+  .exerciseBicyclesDescription {
+    grid-area: exerciseBicyclesDescription;
+    padding-top: 4rem;
+    padding-left: 0;
+    padding-bottom: 3rem;
+  }
+  .bicyclesCircle {
+    grid-area: bicyclesCircle;
+    width: 95%;
+    height: 60vh;
+    padding-bottom: 2rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+  }
+  .bicyclesDescription {
+    padding-bottom: 2rem;
+  }
 
-    .rowerRowingDescription {
-     
-        padding-left:0;
-    }
+  .rowerRowingcircle {
+    width: 95%;
+    height: 60vh;
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+  }
 
+  .rowerRowingDescription {
+    padding-left: 0;
+  }
 
-    .equipments3 {
-        padding-top: 5rem;
-        display: grid;
-        grid-template-areas:
-            'dumbbellCircle  '
-            'dumbbellDescription '
-            'kettlebellCircle'
-            'kettlebellDescription'
-            ' pullupBarCircle '
-            '  pullupBarDescription'
-            ' balanceBallcircle'
-            'balanceBallDescription ';
-        width: 100%;
-       
-    }
-    .dumbbellPicture img {
-        max-width: 70%;
-        margin-left: 4rem;
-        margin-top: 4.5rem;
-    }
+  .equipments3 {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-areas:
+      "dumbbellCircle  "
+      "dumbbellDescription "
+      "kettlebellCircle"
+      "kettlebellDescription"
+      " pullupBarCircle "
+      "  pullupBarDescription"
+      " balanceBallcircle"
+      "balanceBallDescription ";
+    width: 100%;
+  }
+  .dumbbellPicture img {
+    max-width: 70%;
+    margin-left: 4rem;
+    margin-top: 4.5rem;
+  }
 
-    .dumbbellCircle {
-        grid-area: dumbbellCircle;
-        width: 77%;
-        height: 65vh;
-        margin-left: 2rem;
-       
-    }
-    .dumbbellDescription p{
-        text-align: center;
-        padding-top: 1rem;
-       
-        font-size: 90%;
-    }
+  .dumbbellCircle {
+    grid-area: dumbbellCircle;
+    width: 77%;
+    height: 65vh;
+    margin-left: 2rem;
+  }
+  .dumbbellDescription p {
+    text-align: center;
+    padding-top: 1rem;
 
-    .kettlebellCircle {
-        
-        width: 77%;
-        height: 65vh;
-        margin-left: 2rem;
-       margin-top: 3rem;
+    font-size: 90%;
+  }
 
-}
+  .kettlebellCircle {
+    width: 77%;
+    height: 65vh;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
 
-.equipments3 div img {
+  .equipments3 div img {
     width: 90%;
-}
-.kettlebellPicture img {
+  }
+  .kettlebellPicture img {
     max-width: 95%;
     margin-top: 8rem;
     margin-left: 2rem;
-}
+  }
 
-.kettlebellDescription p {
+  .kettlebellDescription p {
     text-align: center;
     padding-top: 1rem;
-       
+
     font-size: 90%;
-}
-.kettlebellDescription {
+  }
+  .kettlebellDescription {
     grid-area: kettlebellDescription;
     padding-top: 4rem;
     padding-left: 0;
-}
+  }
 
-.pullupBarCircle {
+  .pullupBarCircle {
     grid-area: pullupBarCircle;
     width: 77%;
     height: 65vh;
-    margin-left:3rem;
+    margin-left: 3rem;
     margin-top: 3rem;
-  
-}
-.pullupBarDescription p{
+  }
+  .pullupBarDescription p {
     text-align: center;
     padding-top: 1rem;
-       
-    font-size: 90%;
-}
 
-.balanceBallcircle {
-   
+    font-size: 90%;
+  }
+
+  .balanceBallcircle {
     width: 77%;
     height: 65vh;
     margin-left: 2rem;
     margin-top: 3rem;
-    
-}
+  }
 
-.balancePicture  img{
+  .balancePicture img {
     width: 100%;
+  }
 
-}
-
-.balanceBallDescription {
+  .balanceBallDescription {
     grid-area: balanceBallDescription;
     padding-top: 4rem;
     padding-left: 0;
-}
-.balanceBallDescription p {
+  }
+  .balanceBallDescription p {
     text-align: center;
     padding-top: 1rem;
-       
-    font-size: 90%;
-}
 
-.equipments2{
- 
-    display:grid;
-   
-    grid-template-areas: 'heavyBagCircle  '
-                        ' heavyBagDescription '
-                         'boxingGlovesCircle '
-                         'boxingGlovesDescription '
-                           'boxingHandPadsCircle '
-                           ' boxingHandPadsDescription';
- 
-}
-.heavyBagCircle {
+    font-size: 90%;
+  }
+
+  .equipments2 {
+    display: grid;
+
+    grid-template-areas:
+      "heavyBagCircle  "
+      " heavyBagDescription "
+      "boxingGlovesCircle "
+      "boxingGlovesDescription "
+      "boxingHandPadsCircle "
+      " boxingHandPadsDescription";
+  }
+  .heavyBagCircle {
     grid-area: heavyBagCircle;
-   width: 77%;
+    width: 77%;
     height: 65vh;
     margin-left: 3rem;
-  
-}
+  }
 
-.heavyBagPicture>img {
+  .heavyBagPicture > img {
     display: inline-block;
     margin-left: 3rem;
     width: 68%;
-}
-.heavyBagDescription p{
+  }
+  .heavyBagDescription p {
     text-align: center;
-    padding-top: 1rem;   
+    padding-top: 1rem;
     font-size: 90%;
-}
-.boxingGlovesCircle {
-   
+  }
+  .boxingGlovesCircle {
     width: 77%;
     height: 65vh;
     margin-left: 3rem;
     margin-top: 3rem;
-   
-}
-.boxingGlovePicture>img {
+  }
+  .boxingGlovePicture > img {
     width: 74%;
     display: inline-block;
     margin-top: 7rem;
     margin-left: 3rem;
-}
-.boxingGlovesDescription {
+  }
+  .boxingGlovesDescription {
     padding-left: 0;
-}
-.boxingGlovesDescription p {
+  }
+  .boxingGlovesDescription p {
     text-align: center;
-    padding-top: 1rem;   
+    padding-top: 1rem;
     font-size: 90%;
-  
-}
-.boxingHandPadsCircle {
+  }
+  .boxingHandPadsCircle {
     width: 77%;
-    height:65vh; 
-    margin-left:3rem;
+    height: 65vh;
+    margin-left: 3rem;
     margin-top: 3rem;
-  
-}
-.boxingHandPadsPictures>img {
+  }
+  .boxingHandPadsPictures > img {
     width: 82%;
     margin-left: 2rem;
     margin-top: 4rem;
-}
-.boxingHandPadsDescription p {
+  }
+  .boxingHandPadsDescription p {
     text-align: center;
-    padding-top: 1rem;   
+    padding-top: 1rem;
     font-size: 90%;
-}
+  }
 
-
-/* NAV BAR HAMBURGER MENU */
-.navBar{
+  /* NAV BAR HAMBURGER MENU */
+  .navBar {
     /* height: 50vh; */
     display: block;
-}
-.navItems{
-    display:block;
+  }
+  .navItems {
+    display: block;
     /* display:block; */
-    position:absolute;
+    position: absolute;
     /* position: fixed; */
     z-index: 8;
     top: 33.5px;
-    left:10rem;
-    background-color:black;
+    left: 10rem;
+    background-color: black;
     opacity: 0.9;
     margin-top: 10px;
-    padding:150px 75px;
+    padding: 150px 75px;
     height: 90vh;
     width: 100%;
-    clip-path:circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10% );
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
-    
-}
-.navItems.open{
-    clip-path:circle(700px at 90% -10%);
+  }
+  .navItems.open {
+    clip-path: circle(700px at 90% -10%);
     -webkit-clip-path: circle(800px at 90% -10%);
     pointer-events: all;
-}
+  }
 
-
-.navItems li:nth-child(1) {
-    transition: all 0.5s ease ;
-}
-.navItems li:nth-child(2) {
-    transition: all 0.5s ease ;
-}
-.navItems li:nth-child(3) {
-    transition: all 0.5s ease ;
-}
-.navItems li:nth-child(4) {
+  .navItems li:nth-child(1) {
+    transition: all 0.5s ease;
+  }
+  .navItems li:nth-child(2) {
+    transition: all 0.5s ease;
+  }
+  .navItems li:nth-child(3) {
+    transition: all 0.5s ease;
+  }
+  .navItems li:nth-child(4) {
     transition: all 0.5s ease 0.5s;
-}
-.navItems li:nth-child(5) {
+  }
+  .navItems li:nth-child(5) {
     transition: all 0.5s ease 0.5s;
-}
-.navItems li:nth-child(6) {
+  }
+  .navItems li:nth-child(6) {
     transition: all 0.5s ease 0.6s;
-}
+  }
 
-
- .hireCategories1 {
-   display: block!important;
-   /* position: absolute!important; */
-}
-/* .hireCategories1>.gories{
+  .hireCategories1 {
+    display: block !important;
+    /* position: absolute!important; */
+  }
+  /* .hireCategories1>.gories{
     display:block!important;
     position: relative!important;
     left: 0;
@@ -2074,109 +1821,104 @@ padding: 2px;
     
 } */
 
-
-.logoName{
+  .logoName {
     display: flex;
     justify-content: space-between;
-}
-.toggle{
-   visibility: visible!important;
-}
-.toggle:hover{
-   color:orange;
-    animation-name:rotate;
-    animation-duration:2s;
-    animation-fill-mode:both;
-    animation-iteration-count:2;
-    animation-delay:0;
+  }
+  .toggle {
+    visibility: visible !important;
+  }
+  .toggle:hover {
+    color: orange;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-delay: 0;
     animation-direction: normal;
-}
-.toggle{
+  }
+  .toggle {
     display: flex;
- align-items: flex-end;
+    align-items: flex-end;
     justify-content: flex-end;
     padding-right: 15px;
- 
-}
-.gories{
-    visibility:visible!;
-}
-.hire{
+  }
+  .gories {
+    visibility: visible!;
+  }
+  .hire {
     display: none;
+  }
+  .hireCategories1 {
+    display: none !important ;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotatez(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
 }
-.hireCategories1{
-    display:none!important ;
-}
-
-
-@keyframes rotate{
-    from{
-    transform:rotatez(0deg)
-    }
-    to{
-        transform:rotateZ(360deg)
-    }
-    }
-
-
-   
-
-} 
 /* END OF MEDIA QUERIE */
 
-.toggle{
- visibility: hidden;
+.toggle {
+  visibility: hidden;
 }
-@keyframes circle{
-from{
-transform:translateY(0)
-}
-to{
-    transform:translateY(20px)
-}
-}
-
-
-.bicyclesCircle,.exerciseBicyclesCircle,.threadmillCircle,.rowerRowingcircle,.dumbbellCircle, .kettlebellCircle, .pullupBarCircle,.balanceBallcircle,.heavyBagCircle, .boxingGlovesCircle, .boxingHandPadsCircle {
-   
-    animation-name:circle;
-    animation-duration:3s;
-    animation-fill-mode:both;
-    animation-iteration-count:infinite;
-    animation-delay:1s;
-    animation-direction: alternate;
-
-}
-.countdown{
-    font-size: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-  
-  .countdown div {
-    padding: 10px;
-    padding-top: 3rem;
-    border: none;
-    background:transparent;
-    opacity: 0.7;
-    /* margin: 5px; */
+@keyframes circle {
+  from {
+    transform: translateY(0);
   }
-  
-  .countdown div:first-child {
-    /* background: #17a2b8; */
+  to {
+    transform: translateY(20px);
   }
-  
-  .countdown span {
-    display: block;
-    font-size:1.5rem;
-  }
+}
 
-@media screen and (min-width:800px){
-  .gories{
-    display:none;
+.bicyclesCircle,
+.exerciseBicyclesCircle,
+.threadmillCircle,
+.rowerRowingcircle,
+.dumbbellCircle,
+.kettlebellCircle,
+.pullupBarCircle,
+.balanceBallcircle,
+.heavyBagCircle,
+.boxingGlovesCircle,
+.boxingHandPadsCircle {
+  animation-name: circle;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-direction: alternate;
+}
+.countdown {
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown div {
+  padding: 10px;
+  padding-top: 3rem;
+  border: none;
+  background: transparent;
+  opacity: 0.7;
+  /* margin: 5px; */
+}
+
+.countdown span {
+  display: block;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .gories {
+    display: none;
   }
 }
